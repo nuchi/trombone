@@ -1,0 +1,51 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_39_blur">
+   <feGaussianBlur stdDeviation="4.6" in="SourceGraphic"/>
+  </filter>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_41_blur">
+   <feGaussianBlur stdDeviation="5.1" in="SourceGraphic"/>
+  </filter>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_42_blur">
+   <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
+  </filter>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_40_blur">
+   <feGaussianBlur stdDeviation="5" in="SourceGraphic"/>
+  </filter>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_43_blur">
+   <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
+  </filter>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_45_blur">
+   <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
+  </filter>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_46_blur">
+   <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <line transform="rotate(-10.1856, 26, 217)" filter="url(#svg_39_blur)" stroke-width="36" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_39" y2="475.05544" x2="51.26098" y1="-41.05543" x1="0.73902" stroke="#000000" fill="none"/>
+  <line transform="rotate(-9.7854, 207, 229)" filter="url(#svg_40_blur)" stroke-width="20" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_40" y2="487.05544" x2="232.26098" y1="-29.05543" x1="181.73902" stroke="#000000" fill="none"/>
+  <line filter="url(#svg_41_blur)" transform="rotate(-9.11549, 311, 229)" stroke-width="14" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_41" y2="487.05544" x2="336.26098" y1="-29.05543" x1="285.73902" stroke="#46673d" fill="none"/>
+  <line filter="url(#svg_42_blur)" transform="rotate(-9.33579, 380, 229)" stroke-width="12" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_42" y2="487.05544" x2="405.26098" y1="-29.05543" x1="354.73902" stroke="#000000" fill="none"/>
+  <line filter="url(#svg_43_blur)" transform="rotate(-9.33579, 440, 229)" stroke-width="14" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_43" y2="487.05544" x2="465.26098" y1="-29.05543" x1="414.73902" stroke="#CFCA6D" fill="none"/>
+  <line filter="url(#svg_45_blur)" transform="rotate(-9.33579, 486, 229)" stroke-width="10" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_45" y2="487.05544" x2="511.26098" y1="-29.05543" x1="460.73902" stroke="#46673D" fill="none"/>
+  <line filter="url(#svg_46_blur)" transform="rotate(-9.33579, 524, 229)" stroke-width="8" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_46" y2="487.05544" x2="549.26098" y1="-29.05543" x1="498.73902" stroke="#CC7C65" fill="none"/>
+  <line filter="url(#svg_46_blur)" transform="rotate(-9.66862, 559, 229)" stroke-width="8" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_47" y2="487.05544" x2="584.26098" y1="-29.05543" x1="533.73902" stroke="#000000" fill="none"/>
+  <line filter="url(#svg_46_blur)" transform="rotate(-9.66862, 590, 229)" stroke-width="8" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_48" y2="487.05544" x2="615.26098" y1="-29.05543" x1="564.73902" stroke="#5B9BA2" fill="none"/>
+  <line filter="url(#svg_46_blur)" transform="rotate(-9.66862, 611, 213)" stroke-width="8" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_49" y2="471.05544" x2="636.26098" y1="-45.05543" x1="585.73902" stroke="#CFCA6D" fill="none"/>
+  <line filter="url(#svg_46_blur)" transform="rotate(-9.66862, 635, 213)" stroke-width="8" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_50" y2="471.05544" x2="660.26098" y1="-45.05543" x1="609.73902" stroke="#CC7C65" fill="none"/>
+  <line filter="url(#svg_46_blur)" transform="rotate(-9.66862, 659, 213)" stroke-width="8" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_51" y2="471.05544" x2="684.26098" y1="-45.05543" x1="633.73902" stroke="#46673D" fill="none"/>
+  <line filter="url(#svg_46_blur)" transform="rotate(-9.66862, 678, 213)" stroke-width="8" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_52" y2="471.05544" x2="703.26098" y1="-45.05543" x1="652.73902" stroke="#CC7C65" fill="none"/>
+  <line filter="url(#svg_46_blur)" transform="rotate(-9.66862, 699, 213)" stroke-width="8" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_53" y2="471.05544" x2="724.26098" y1="-45.05543" x1="673.73902" stroke="#CC7C65" fill="none"/>
+  <line filter="url(#svg_46_blur)" transform="rotate(-9.66862, 718, 213)" stroke-width="8" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_54" y2="471.05544" x2="743.26098" y1="-45.05543" x1="692.73902" stroke="#999999" fill="none"/>
+  <line filter="url(#svg_46_blur)" transform="rotate(-9.66862, 736, 213)" stroke-width="8" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_55" y2="471.05544" x2="761.26098" y1="-45.05543" x1="710.73902" stroke="#000000" fill="none"/>
+  <line filter="url(#svg_46_blur)" transform="rotate(16.0689, 785.668, 172.563)" stroke-width="99" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_56" y2="430.61889" x2="941.14381" y1="-85.49198" x1="630.19317" stroke="#999999" fill="none"/>
+  <line filter="url(#svg_46_blur)" transform="rotate(16.0689, 836.668, 172.563)" stroke-width="99" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_57" y2="430.61889" x2="992.14381" y1="-85.49198" x1="681.19317" stroke="#999999" fill="none"/>
+  <rect stroke-dasharray="2,2" id="svg_59" height="522.99996" width="180.00001" y="-6.49993" x="530.50001" stroke-width="2" stroke="#000000" fill="none"/>
+  <rect stroke-dasharray="2,2" id="svg_61" height="458.99999" width="174" y="-7.49995" x="181.50001" stroke-width="2" stroke="#000000" fill="none"/>
+  <rect stroke-dasharray="5,5" id="svg_62" height="451.99999" width="180.00001" y="-38.49995" x="426.50001" stroke-width="4" stroke="#000000" fill="none"/>
+  <rect stroke-dasharray="5,5" id="svg_63" height="458.99999" width="180.00001" y="-41.49995" x="606.50001" stroke-width="4" stroke="#000000" fill="none"/>
+  <rect stroke-dasharray="5,5" id="svg_64" height="451.99999" width="172.00001" y="-3.49995" x="79.50001" stroke-width="4" stroke="#000000" fill="none"/>
+ </g>
+</svg>
