@@ -6,8 +6,8 @@
     <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trombone Simulator</title>
-  <script type="module" crossorigin src="./assets/index.5e712e91.js"></script>
-  <link rel="stylesheet" href="./assets/index.5d547e0f.css">
+  <script type="module" crossorigin src="./assets/index.2eee3d0d.js"></script>
+  <link rel="stylesheet" href="./assets/index.23908f03.css">
 </head>
   <body>
     <div id="app">
@@ -16,12 +16,36 @@
       </div>
       <div id="status"></div>
       <h1>Trombone Simulator</h1>
-      <h2>How to use it</h2>
-      <div id="content-wrapper">
-        <p>Click and drag in the image above to control the simulated trombone. The horizontal axis controls embouchure. Move to the right for higher pitch, left for lower pitch. The vertical axis controls slide length: move down to retract the slide, up to extend. The diagonal lines indicate resonances, where the embouchure and the slide length sync up to generate a clean tone (the ones in red are the ones that are out of tune when the slide is fully retracted). I've also added vertical dashed lines at Bb (thick) and F (thin) as rough guides. You can lip up and down to bend notes. The fat diagonal line all the way on the left is the pedal tone.</p>
-        <p>If you're using a device with a keyboard, you can also hold the "f" key for flutter tongue, and hold the "g" key to growl into the trombone.</p>
-        <!-- <h2>How it works</h2>
-        <p>This is a physically modeled trombone. The lips are modeled by a damped spring controlling a valve between constant lung pressure entering a tube open on the other end. The embouchure control directly modifies the spring constant. The slide length control modifies the length of the tube. The flared bell is modeled by a  -->
+      <h2>Controls</h2>
+      <div class="content-wrapper">
+        <p>
+          <ul>
+            <li>Embouchure low/high: cursor left/right</li>
+            <li>Extend/Retract slide: cursor up/down</li>
+            <li>Blow: hold space, or touch/click</li>
+            <li>Growl: hold g</li>
+            <li>Flutter tongue: hold f</li>
+          </ul>
+        </p>
+      </div>
+      <h2>How to play a trombone</h2>
+      <div class="content-wrapper">
+        <p>At the most basic level, one plays the trombone by blowing into it while holding the lips against the mouthpiece. The lips vibrate open and closed, at a speed depending on how much tension they have. The lips vibrating causes the air in the trombone to vibrate, producing a sound emanating from the bell. The faster the lips vibrate (because of more tension), the higher the note produced. When the lips slow down (because of less tension), the note is lower.</p>
+        <p>However for a fixed length of tube, only certain notes will sound out loud. These notes are called resonances. These notes have large gaps between them, large enough that not every in-between note can be produced. (Just like a bugle, which has neither slide nor valves: only some notes can be played.) The purpose of the trombone's slide is to lengthen the tube, which lowers the resonances. By adjusting one's embouchure (lip tension) and the slide length at the same time, every note can be produced.</p>
+      </div>
+      <h2>How to play this simulator</h2>
+      <div class="content-wrapper">
+        <p>This simulator is a physical model of a trombone. Physical models of the lips, mouthpiece, slide, and bell are digitally simulated. The controls are listed at the top. The main controls are to move the cursor (or your finger on a touch device) left and right on the picture to adjust the embouchure, and up and down to extend and retract the slide. The diagonal colored lines are a guide to where the resonances are: playing over a resonance means that the embouchure and slide length are matched. Playing over white space means that one is between resonances and the note quality won't be as good. The big gray wedge on the upper right indicates that the resonances are very close together there. The vertical dashed lines indicate the rough locations of B-flat (thick lines) and F (thin lines). Other notes are unmarked, and likewise the slide positions. (Just like on a real trombone!) The off-key resonances (7th, 11th, 13th, and 14th) are marked in red. The g and f keys can be used to growl and flutter-tongue, respectively.</p>
+      </div>
+      <h2>How it was made</h2>
+      <div class="content-wrapper">
+        <p>I wrote the audio simulation in <a href="https://faust.grame.fr/">Faust</a>, which conveniently compiles to WebAssembly and a Web Audio API wrapper. The overall approach I used was a digital waveguide model, as described in <a href="https://ccrma.stanford.edu/~jos/pasp/Digital_Waveguide_Theory.html">J. O. Smith III's Digital Waveguide Theory</a>. The lips and bell are adapted from <a href="https://core.ac.uk/download/pdf/56376581.pdf">F. Scott's masters thesis (pdf)</a>.</p>
+        <p>The lips are modelled as a a blown-open valve, with the spring constant corresponding to embouchure. I couldn't get Scott's mouthpiece model to work, so instead I modeled it as a 3-port scattering junction along with the lips and the start of the trombone bore. The mouthpiece is the third port and is modelled as a 1-sample length tube with a resonator acting as the reflectance. I don't really know why that works, but it does more-or-less correctly adjust the resonances of the trombone to where I wanted them to be (when I just had the lips connecting directly to the bore, the resonances were shifted too high).</p>
+        <p>The bell reflection and transmission filters were hand-designed to have roughly the amplitude and phase profile described in Scott's thesis. The slide is modelled simply as a variable delay line in between the mouthpiece and bell.</p>
+      </div>
+      <h2>About me</h2>
+      <div class="content-wrapper">
+        <p>I'm a mathematician and software engineer. See <a href="https://haggainuchi.com">my website</a> for more information. My professional interests include robotics, digital signal processing, machine learning infrastructure, among other things. I am currently available for consulting engagements. I enjoy feedback, and would be glad to hear from you if you enjoyed this simulator!</p>
       </div>
     </div>
     
